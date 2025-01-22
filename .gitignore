@@ -1,0 +1,49 @@
+# Ignore node_modules in both server and client
+node_modules/
+server/node_modules/
+client/node_modules/
+
+# Ignore build files in React frontend
+client/build/
+client/.next/  # Nếu dùng Next.js
+
+# Ignore environment variables
+.env
+server/.env
+client/.env
+
+# Ignore logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+server/logs/
+client/logs/
+*.log
+
+# Ignore editor & system files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# Ignore coverage and test files
+server/coverage/
+client/coverage/
+server/jest-cache/
+client/jest-cache/
+
+# Ignore Heroku and deployment files
+server/.heroku/
+client/.heroku/
+
+# Ignore temporary files
+*.cache
+server/tmp/
+client/tmp/
+server/dist/
+client/dist/
+
+# Ignore Docker files (nếu dùng Docker)
+docker-compose.override.yml
